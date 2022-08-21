@@ -1,0 +1,11 @@
+extends layout
+block content
+  header
+    section#thankyou.position-absolute.top-50.start-50.translate-middle
+        -user = user || {}
+
+        if error
+            ul.my-errors
+                li= error.message
+
+        a.w-100.btn.btn-md.btn-light.mt-3(href="/register") Try Again

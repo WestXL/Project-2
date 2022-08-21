@@ -1,0 +1,26 @@
+.listing-table {
+  width: 88%;
+  margin: 6%;
+}
+
+.listing-table th {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+  background: rgb(143, 143, 143);
+  color: #fff;
+}
+
+.listing-table th {
+  border-right: 1px solid #666;
+}
+
+.listing-table td {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.listing-table td {
+  border-right: 1px solid #666;
+}
+
+/*# sourceMappingURL=styles.css.map */

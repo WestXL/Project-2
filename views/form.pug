@@ -1,0 +1,57 @@
+extends layout
+
+block content
+
+    -data = data || {}
+    if errors
+        ul.my-errors
+            for error in errors
+                li=error.msg
+
+    h4
+        | Register
+
+    form(action="/register" method="POST" class="form-registration")
+
+
+        label(for="Username") Username:
+        input(
+            type="text"
+            id="user"
+            name="username"
+            class="form-control"
+            value=data.username
+        )
+
+        label(for="Password") Password:
+        input(
+            type="password"
+            id="pwd"
+            name="password"
+            class="form-control"
+            value=data.password
+        )
+
+        input(
+            type="submit" 
+            value="Register"
+            class="btn btn-lg btn-primary btn-block"
+        )
+
+        //- label(for="name") Name:
+        //- input(
+        //-     type="text"
+        //-     id="name"
+        //-     name="name"
+        //-     class="form-control"
+        //-     value=data.name
+        //- )
+
+        //- label(for="email") Email:
+        //- input(
+        //-     type="email"
+        //-     id="email"
+        //-     name="email"
+        //-     class="form-control"
+        //-     value=data.email
+        //- )
